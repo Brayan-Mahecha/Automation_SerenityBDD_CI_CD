@@ -1,0 +1,2 @@
+# Automation_SerenityBDD_CI_CD
+Automatizacion usando lineamientos actualizados
