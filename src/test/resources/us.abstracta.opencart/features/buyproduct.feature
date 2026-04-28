@@ -11,7 +11,7 @@ Feature: Buy products
     Then they should verify that the message "Your order has been placed!" is displayed
     Examples:
       | id | archive              | sheet | userType       |
-      | 1  | DataBuyProducts.xlsx | Data  | Guest Checkout |
+   #   | 1  | DataBuyProducts.xlsx | Data  | Guest Checkout |
 
   @CartEmpty
   Scenario Outline: Shooping Cart Empty

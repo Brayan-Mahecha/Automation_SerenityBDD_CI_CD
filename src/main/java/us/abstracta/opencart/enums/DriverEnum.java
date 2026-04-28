@@ -42,7 +42,11 @@ public enum DriverEnum {
         @Override
         public WebDriver execute() {
             WebDriver webDriver;
-            WebDriverManager.edgedriver().setup();
+            //WebDriverManager.edgedriver().setup();
+            //A veces falla porque la version del navegador es muy reciente, y no esta disponible y nos arroja un HTTP 409, entonces definimos una version mas baja
+            WebDriverManager.edgedriver()
+                    .driverVersion("146.0.2592.102") // ejemplo válido
+                    .setup();
             EdgeOptions options = new EdgeOptions();
             options.addArguments("--incognito");
             options.addArguments(IGNORE_CERTIFICATES_ERROR);
